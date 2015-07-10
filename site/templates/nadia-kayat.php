@@ -5,7 +5,7 @@
     <div class="text">
     	<h1><?php echo $page->title()->html() ?></h1>
 	
-		<h2>This is the default.php template</h2>
+		<h2>This is the nadia-kayat.php template</h2>
 
       	<?php echo $page->text()->kirbytext() ?>
     </div>

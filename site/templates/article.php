@@ -3,7 +3,7 @@
   <main class="main" role="main">
 
     <h1><?php echo $page->title()->html() ?></h1>
-    <h2>This is the project.php template</h2>
+    <h2>This is the article.php template</h2>
 
     <ul class="meta cf">
       <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
