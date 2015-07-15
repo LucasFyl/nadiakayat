@@ -1,14 +1,19 @@
-  <footer class="footer cf" role="contentinfo">
+  <footer role="contentinfo">
 
+	<ul class="">
+		<li>Nadia Kayat Architects</li>
+		<li>Rosenthaler Straße 68,  D-10119 Berlin</li>
+		<li>+49 (0) 30-36414168</li>
+		<li><a href="http://nadiakayatarchitects.com">www.nadiakayatarchitects.com</a></li>
+		<li><a href="mailto:info@nadiakayatarchitects.com">info@nadiakayatarchitects.com</a></li>
+	</ul>
+	<div class="clearfix"></div>
     <div class="copyright">
       <?php echo $site->copyright()->kirbytext() ?>
     </div>
 
-    <div class="colophon">
-      <a href="http://getkirby.com/made-with-kirby-and-love">Made with Kirby and <b>♥</b></a>
-    </div>
-
   </footer>
+
 
 <?= js('assets/js/vendors.min.js') ?>
 <?= js('assets/js/app.min.js') ?>

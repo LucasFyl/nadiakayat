@@ -6,9 +6,9 @@ password: >
   $2a$10$nhm.wRmNN3LR.NRmWOG50uBhQKhQ1Lk6hRJqD.YJm6fO4eSJDK8Ei
 language: en
 role: admin
-token: b7252466e68601a8f5a233552af55930a4073c6b
+token: 1ec500402ed4510b3f0fbc2386e36971421deaee
 history:
+  - null
   - de
   - en
   - home
-  - null

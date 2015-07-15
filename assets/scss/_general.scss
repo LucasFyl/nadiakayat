@@ -1,0 +1,103 @@
+	// ===== APPLICATION STYLES =====
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-family: $mainFont;
+}
+
+a {
+  transition: .1s ease-in-out;
+  color: $linkColor;
+  &:hover {
+  	text-decoration: underline;
+  	color: $linkColor;
+  	cursor: pointer;
+  }
+  &:active, &:focus {
+  	color: $linkColor;
+  }
+}
+p {
+	color: $baseColor;
+}
+.vertical-center {
+	display: inline-block;
+	position: relative;
+	top: 50%; transform: translateY(-50%);
+}
+
+
+// ===== Homepage =====
+
+#main.home {
+	width: 100%;
+	height: 90%;
+
+	.vertical-center {
+		width: 100%;
+		height: auto;
+		> div {
+			width: 22rem;
+			margin: 0 auto;
+			img {
+				display: block;
+				margin: 0 auto 7.5rem;
+			}
+			> div {
+				text-align: center;
+				a {
+					font-size: 1.9rem;
+				}
+			}
+		}
+			
+	}
+	.info-links {
+		position: absolute;
+		bottom: 12%;
+		left: 50%;
+		transform: translateX(-50%);
+		ul {
+			display: inline-block;
+			margin: 0; padding: 0;
+			li {
+				display: block;
+				text-align: center;
+				font-size: 1.3rem;
+				line-height: 3.8rem;
+			}
+		}
+	}
+}
+
+footer {
+	text-align: center;
+
+	ul {
+		list-style-type: none;
+		line-height: 1.3rem;
+		font-size: 1.3rem;
+		height: 1.3rem;
+		margin-bottom: 2rem;
+		display: inline-block;
+
+		li {
+			display: inline-block;
+			float: left;
+			padding: 0 2rem;
+			&:first-child {
+				padding-left: 0;
+			}	
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+}
