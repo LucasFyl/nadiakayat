@@ -91,13 +91,30 @@ p {
 	padding-bottom: 10rem;
 
 	> div:first-child {
+		margin-bottom: 4rem;
 		img {
 			width: auto;
-			max-height: 13rem;
+			max-height: 14rem;
+			padding-top: 0.5rem;
 		}
 		p {
 			color: $greyish;
 			font-size: 1.7rem;
 		}
+	}
+	> div:nth-child(3) {
+		.scroll-wrap {
+			max-height: 10rem;
+			overflow: scroll;
+			h2 {
+				font-size: 1.7rem;
+				margin-bottom: 1.5rem;
+				color: $greyish;
+			} 
+			p {
+				font-size: 1.5rem;
+				color: $greyish;
+			}
+		} 
 	}
 }

@@ -12,7 +12,11 @@
 	<div class="clearfix"></div>
   	
   	<div class="row">
-  		<?php echo $page->resume()->kirbytext() ?>
+  		<div class="customScroll scroll-wrap small-12 column">
+  			<div>
+		  		<?php echo $page->resume()->kirbytext() ?>
+  			</div>
+  		</div>
   	</div>
 </div>
 
