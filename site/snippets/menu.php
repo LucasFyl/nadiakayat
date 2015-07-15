@@ -2,7 +2,7 @@
 
   <ul>
     <?php foreach($pages->find('en')->children()->visible() as $subpage): ?>
-    <li>
+    <li class="small-6 medium-4 large-2">
       <a href="<?php echo $subpage->url() ?>">
         <?php echo html($subpage->title()) ?>
       </a>

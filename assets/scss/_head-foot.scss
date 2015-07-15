@@ -1,0 +1,64 @@
+// ===== Header =====
+
+header {
+	display:block;
+	width: auto;
+	height: 17.5rem;
+	margin-left: 15rem;
+	margin-right: 15rem;
+	padding-top: 9rem;
+	a.logo {
+		display: inline-block;
+		float: left;
+		height: 8rem;
+		img {
+			height: 100%;
+		}
+	}
+	ul {
+		margin: 0 -10rem 0 13rem;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 1.9rem;
+			line-height: 1.9rem;
+			text-align: center;
+			margin-bottom: 1.7rem;
+			
+			&:last-child {
+				position: absolute;
+				display: inline-block;
+				width: auto;
+				right: 15rem;
+				top: 9rem;
+			}
+		}
+	}
+}
+
+// ===== Footer =====
+
+footer {
+	text-align: center;
+
+	ul {
+		list-style-type: none;
+		line-height: 1.3rem;
+		font-size: 1.3rem;
+		height: 1.3rem;
+		margin-bottom: 2rem;
+		display: inline-block;
+
+		li {
+			display: inline-block;
+			float: left;
+			padding: 0 2rem;
+			&:first-child {
+				padding-left: 0;
+			}	
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+}
