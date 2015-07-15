@@ -77,6 +77,44 @@ p {
 	}
 }
 
+header {
+	display:block;
+	width: auto;
+	height: 17.5rem;
+	margin-left: 15rem;
+	margin-right: 15rem;
+	margin-top: 9rem;
+	a.logo {
+		display: inline-block;
+		float: left;
+		height: 8rem;
+		img {
+			height: 100%;
+		}
+	}
+	ul {
+		margin: 0;
+  		margin-left: 90px;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 1.9rem;
+			line-height: 1.9rem;
+			width: calc(100% / 5.1);
+			text-align: center;
+			// padding-left: 11rem;
+			// margin-bottom: 1.7rem;
+			&:last-child {
+				position: absolute;
+				display: inline-block;
+				width: auto;
+				right: 15rem;
+				top: 0px;
+			}
+		}
+	}
+}
+
 footer {
 	text-align: center;
 

@@ -1,22 +1,14 @@
 <nav>
 
   <ul>
-    <?php foreach($page->children()->visible() as $p): ?>
+    <?php foreach($pages->find('en')->children()->visible() as $subpage): ?>
     <li>
-      <a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
-
-      <!--<?php if($p->hasVisibleChildren()): ?>
-      <ul class="submenu">
-        <?php foreach($p->children()->visible() as $p): ?>
-        <li>
-          <a href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
-        </li>
-        <?php endforeach ?>
-      </ul>
-      <?php endif ?>-->
-
+      <a href="<?php echo $subpage->url() ?>">
+        <?php echo html($subpage->title()) ?>
+      </a>
     </li>
     <?php endforeach ?>
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
   </ul>
 
 </nav>
