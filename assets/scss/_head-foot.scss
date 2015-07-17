@@ -47,25 +47,30 @@ header {
 // ===== Footer =====
 
 footer {
+	display:block;
+	width: auto;
+	// height: 17.5rem;
+	margin-left: 15rem;
+	margin-right: 15rem;
 	text-align: center;
 
 	ul {
 		list-style-type: none;
 		line-height: 1.3rem;
 		font-size: 1.3rem;
-		height: 1.3rem;
+		margin: 0;
 		margin-bottom: 2rem;
-		display: inline-block;
+		height: 1.3rem;
 
 		li {
 			display: inline-block;
+			width: calc(100% / 5);
 			float: left;
-			padding: 0 2rem;
 			&:first-child {
-				padding-left: 0;
-			}	
+				text-align: left;
+			}
 			&:last-child {
-				padding-right: 0;
+				text-align: right;
 			}
 		}
 	}
