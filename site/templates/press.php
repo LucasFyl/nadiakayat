@@ -1,15 +1,9 @@
+<?php snippet('head') ?>
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
-
-    <div class="text">
-    	<h1><?php echo $page->title()->html() ?></h1>
-	
-		<h2>This is the press.php template</h2>
-
-      	<?php echo $page->text()->kirbytext() ?>
-    </div>
-
-  </main>
+<!-- Main Content -->
+<div id="main" class="office">
+	<h1><?php echo $page->title()->html() ?></h1>
+</div>
 
 <?php snippet('footer') ?>

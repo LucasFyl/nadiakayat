@@ -1,26 +1,23 @@
+<?php snippet('head') ?>
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+<!-- Main Content -->
+<div id="main" class="article">
+  <h1>"<?php echo $page->title()->html() ?>"</h1>
+  <h2><?php echo $page->media()->html() ?></h2>
+  <p>Click on the image to expand.</p>
 
-    <h1><?php echo $page->title()->html() ?></h1>
-    <h2>This is the article.php template</h2>
-
-    <ul class="meta cf">
-      <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
-      <li><b>Tags:</b> <?php echo $page->tags() ?></li>
-    </ul>
-
-    <div class="text">
-      <?php echo $page->text()->kirbytext() ?>
-
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-      <figure>
+  <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+    <figure>
+      <a href="<?php echo $image->url() ?>" target="_blank">
         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-      </figure>
-      <?php endforeach ?>
-    </div>
+      </a>
+    </figure>
+  <?php endforeach ?>
 
-    <nav class="nextprev cf" role="navigation">
+  <a href="<?php echo $page->link()->html() ?>" target="_blank">open original article <i class="fa fa-external-link"></i></a>
+
+  <nav class="nextprev cf" role="navigation">
       <?php if($prev = $page->prevVisible()): ?>
       <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
       <?php endif ?>
@@ -28,7 +25,6 @@
       <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
       <?php endif ?>
     </nav>
-
-  </main>
+</div>
 
 <?php snippet('footer') ?>
