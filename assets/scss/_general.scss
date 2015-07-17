@@ -47,12 +47,18 @@ p {
 }
 #main:not(.home) {
 	position: relative;
-	margin-left: 15rem;
-	margin-right: 15rem;
 	height: auto;
 	overflow: auto;
 	padding-top: 9rem;
 	padding-bottom: 10rem;
+	@media #{$large-only} { 
+		margin-left: 15rem;
+		margin-right: 15rem;
+	}
+	@media #{$medium-only} { 
+		margin-left: 10rem;
+		margin-right: 10rem;
+	}
 }
 
 // ===== Homepage =====
@@ -103,13 +109,22 @@ p {
 #main.bio {
 
 	.scroll-wrap {
-		height: 25.5rem;
+		height: 100%;
+		@media #{$medium-up} {
+			height: 25.5rem;
+		}
 		overflow: hidden;
 		
 		> div {
-			position: absolute;
-			overflow-y: auto;
-			top: 0;
+			padding: 0 3rem;
+
+			@media #{$medium-up} {
+				position: absolute;
+				overflow-y: auto;
+				top: 0;
+				padding: 0;
+			}
+				
 
 			> div:first-child {
 				margin-bottom: 4rem;
@@ -118,11 +133,15 @@ p {
 					max-height: 14rem;
 					padding-top: 0.5rem;
 					padding-left: 0;
+					
 				}
 				p {
 					// color: $greyish;
 					font-size: 1.7rem;
 					padding-left: 0;
+					@media #{$small-only} {
+						width: 60%;
+					}
 				}
 			}
 			> div:nth-child(3) {
@@ -160,6 +179,9 @@ p {
 		&:hover {
 			color: $baseColor;
 		}
+		@media #{$small-only} {
+			display: none;	
+		}		
 	}
 	figure {
 		margin: 0;
