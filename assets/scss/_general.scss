@@ -35,7 +35,15 @@ p {
 	position: relative;
 	top: 50%; transform: translateY(-50%);
 }
-
+#main:not(.home) {
+	position: relative;
+	margin-left: 15rem;
+	margin-right: 15rem;
+	height: auto;
+	overflow: auto;
+	padding-top: 9rem;
+	padding-bottom: 10rem;
+}
 
 // ===== Homepage =====
 
@@ -83,38 +91,89 @@ p {
 // ===== / Nadia - Kayat =====
 
 #main.bio {
-	margin-left: 15rem;
-	margin-right: 15rem;
-	height: auto;
-	overflow: auto;
-	padding-top: 13rem;
-	padding-bottom: 10rem;
 
-	> div:first-child {
-		margin-bottom: 4rem;
-		img {
-			width: auto;
-			max-height: 14rem;
-			padding-top: 0.5rem;
+	.scroll-wrap {
+		height: 25.5rem;
+		overflow: hidden;
+		
+		> div {
+			position: absolute;
+			overflow-y: auto;
+			top: 0;
+
+			> div:first-child {
+				margin-bottom: 4rem;
+				img {
+					width: auto;
+					max-height: 14rem;
+					padding-top: 0.5rem;
+					padding-left: 0;
+				}
+				p {
+					// color: $greyish;
+					font-size: 1.7rem;
+					padding-left: 0;
+				}
+			}
+			> div:nth-child(3) {
+				h2 {
+					font-size: 1.7rem;
+					margin-bottom: 1.5rem;
+					// color: $greyish;
+					font-weight: bold;
+				} 
+				p {
+					font-size: 1.5rem;
+					// color: $greyish;
+				}
+			}
 		}
-		p {
-			color: $greyish;
-			font-size: 1.7rem;
+			 
+	}
+	.scrollTrigger {
+		font-size: 1.6rem;
+		line-height: 6.5rem;
+		text-align: center;
+		color: $greyish;
+			
+		width: 100%;
+		display: block;
+		overflow: hidden;
+		cursor: pointer;
+		&.up {
+			position: absolute;
+			width: 40px;
+			top: 0;
+			left: 50%;
+			margin-left: -20px;	
+		}
+		&:hover {
+			color: $baseColor;
 		}
 	}
-	> div:nth-child(3) {
-		.scroll-wrap {
-			max-height: 10rem;
-			overflow: scroll;
-			h2 {
-				font-size: 1.7rem;
-				margin-bottom: 1.5rem;
-				color: $greyish;
-			} 
-			p {
-				font-size: 1.5rem;
-				color: $greyish;
+	figure {
+		margin: 0;
+		figcaption {
+			font-size: 1.3rem;
+			padding-top: 1.5rem;
+			a {
+				text-decoration: underline !important;
+				i {
+					padding-left: .5rem;
+					vertical-align: middle;	
+				}
 			}
-		} 
+		}
+	}
+}
+
+#main.contact {
+	min-height: 60%;
+	ul {
+		list-style-type: none;
+		li {
+			font-size: 1.7rem;
+			line-height: 2.8rem;
+		}
 	}
 }
