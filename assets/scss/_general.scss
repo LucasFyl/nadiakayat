@@ -15,6 +15,16 @@ body {
 .row {
 	max-width: none !important;
 }
+@mixin stickyFooter {
+		position: absolute;
+  		bottom: 0;
+  		width: 100%;
+  		margin-left: 0;
+  		margin-right: 0;
+  		padding-left: 15rem;
+  		padding-right: 15rem;
+	}
+
 a {
   transition: .1s ease-in-out;
   color: $linkColor;
@@ -167,6 +177,8 @@ p {
 	}
 }
 
+// ===== / Contact =====
+
 #main.contact {
 	min-height: 60%;
 	ul {
@@ -175,5 +187,45 @@ p {
 			font-size: 1.7rem;
 			line-height: 2.8rem;
 		}
+	}
+}
+@media #{$large-only} { 
+	#main.contact + footer {
+		@include stickyFooter;
+	}
+}
+
+// ===== / Office =====
+
+#main.office {
+	> div {
+		> div:first-child {
+			ul {
+				margin: 0;
+				li {
+					color: $greyish;
+					font-size: 1.7rem;
+					text-transform: uppercase;
+					margin-bottom: 2.63rem;
+					cursor: default;
+				  	transition: 0.3s ease-in-out;
+					&:hover {
+						color: $baseColor;
+					  	transition: 0.3s ease-in-out;
+					}
+				}
+			}
+		}
+		> div:last-child {
+			p {
+				font-size: 1.53rem;
+				margin-bottom: 2.5rem;
+			}
+		}
+	}
+}
+@media #{$large-only} { 
+	#main.office + footer {
+		@include stickyFooter;
 	}
 }
