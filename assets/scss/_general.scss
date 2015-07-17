@@ -251,3 +251,35 @@ p {
 		@include stickyFooter;
 	}
 }
+
+
+#main.article {
+	h1 {
+		font-size: 2.4rem;
+		text-align: center;
+	}
+	h2 {
+		font-size: 1.8rem;
+		text-align: center;
+	}
+	p {
+		font-size: 1.3rem;
+		text-align: center;
+	}
+	> a {
+		display: block; width: 100%;
+		text-align: center;
+	}
+	nav {
+		margin-top: 4rem;
+		a {
+			font-size: 1.8rem;
+			line-height: 2;
+			&.next {
+				text-align: right;
+				float: right;
+			}
+		}
+			
+	}
+}
