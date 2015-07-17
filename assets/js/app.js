@@ -1,5 +1,7 @@
-$(initPage);
- // or $(document).ready(initPage);
+// $(initPage);
+ $(document).ready(function(){
+ 	initPage();
+ });
 
 var $customScroll = $("#customScroll");
 if ($customScroll.length) {
@@ -30,5 +32,19 @@ if ($customScroll.length) {
 }
 
 function initPage(){
-	$(document).foundation();    // Page load event where you can initialize values and call other initializers.
+	// Page load event 
+	$(document).foundation();    
+	if ($("#gallery").length) { 
+		$('#gallery').slick({
+	      fade: true,
+	      dots: true,
+	      infinite: true,
+	      cssEase: "linear",
+	      speed: 500,
+	      autoplay: true,
+	      autoplaySpeed: 2000,
+	      prevArrow: "<a href='#' class='gallerynav prevArrow'> <i class='fa fa-chevron-left'></i> </a>",
+	      nextArrow: "<a href='#' class='gallerynav nextArrow'> <i class='fa fa-chevron-right'></i> </a>",
+	    });
+	}
 }

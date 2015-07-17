@@ -8,7 +8,7 @@
       </a>
     </li>
     <?php endforeach ?>
-    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://www.facebook.com/nadia.kayatarchitects" target="_blank"><i class="fa fa-facebook"></i></a></li>
   </ul>
 
 </nav>

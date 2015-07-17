@@ -8,8 +8,8 @@ language: en
 role: admin
 token: 1ec500402ed4510b3f0fbc2386e36971421deaee
 history:
+  - en/projects/amano
+  - en/press/amano-grand-central
   - en/contact
   - en/press
-  - en/press/amano-grand-central
   - en/press/berliner-morgenpost
-  - en/press/qiez-stadtmagazin-berlin

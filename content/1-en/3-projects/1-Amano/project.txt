@@ -1,13 +1,36 @@
-Title: Project A
+Title: Hotel Amano Grand Central
 
 ----
 
-Year: 2014
+Location: Berlin-Mitte, Germany
 
 ----
 
-Tags: outdoor
+Period: 2011 – 2015
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+Area: 11.062 sqm
+
+----
+
+Client: AmanoGroup / S & R Beteiligungs GmbH & Co. Am Hauptbahnhof KG
+
+----
+
+Typeof: International Competition
+
+----
+
+Program: 
+
+250 Rooms, Bistro, Restaurant, Lobby, Lounge, Planted Courtyard, Conference, Skybar, Rooftop Terrace.
+Task: Architecture, Interior Design, Lighting Design, Landscaping, Art Direction (architecture building construction: nps)
+
+----
+
+Task: 
+
+----
+
+Concept: 

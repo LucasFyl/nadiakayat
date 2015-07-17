@@ -8,12 +8,27 @@ fields:
   title:
     label: Title
     type:  text
-  year:
-    label: Year
+  location:
+    label: Location
     type:  text
-  text:
-    label: Text
+  period:
+    label: Date
+    type:  text
+  area:
+    label: Floor Area
+    type:  text
+  client:
+    label: Client
+    type:  text
+  typeof:
+    label: Type of commission
+    type:  text
+  program:
+    label: Program
     type:  textarea
-  tags:
-    label: Tags
-    type:  tags
+  task:
+    label: Task
+    type: textarea
+  concept:
+    label: Concept
+    type: textarea

@@ -1,34 +1,47 @@
+<?php snippet('head') ?>
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+  
+<!-- Main Content -->
+<div id="main" class="project">
 
-    <h1><?php echo $page->title()->html() ?></h1>
-    <h2>This is the project.php template</h2>
-
-    <ul class="meta cf">
-      <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
-      <li><b>Tags:</b> <?php echo $page->tags() ?></li>
-    </ul>
-
-    <div class="text">
-      <?php echo $page->text()->kirbytext() ?>
-
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-      <figure>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-      </figure>
-      <?php endforeach ?>
+  <section class="row">
+    <!-- Project Infos -->
+    <div class="small-12 medium-3 pull-left">
+      <div>
+        <?php echo $page->title()->kirbytext(); ?>
+        <p><span class="bld">Location:</span> <?php echo $page->location()->html(); ?></p>
+        <p><span class="bld">Date:</span> <?php echo $page->period()->html(); ?></p> 
+        <p><span class="bld">Floor area:</span> <?php echo $page->area()->html(); ?></p> 
+        <p><span class="bld">Client:</span> <?php echo $page->client()->html(); ?></p> 
+        <p><span class="bld">Type of commission:</span> <?php echo $page->typeof()->html(); ?></p> 
+        <p class="mb0"><span class="bld">Program:</span></p>
+        <?php echo $page->program()->kirbytext(); ?></p> 
+        <p><span class="bld">Task:</span> <?php echo $page->task()->html(); ?></p> 
+        <p><span class="bld">Concept:</span> <?php echo $page->concept()->html(); ?></p> 
+      </div>
     </div>
 
-    <nav class="nextprev cf" role="navigation">
-      <?php if($prev = $page->prevVisible()): ?>
-      <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
-      <?php endif ?>
-      <?php if($next = $page->nextVisible()): ?>
-      <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
-      <?php endif ?>
-    </nav>
+    <div class="small-12 medium-9">
+      <!-- Gallery -->
+      <div id="gallery">
+        <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+        <div>
+          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+        </div>
+        <?php endforeach ?>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <nav class="nextprev small-12" role="navigation">
+    <?php if($prev = $page->prevVisible()): ?>
+    <a class="prev small-6" href="<?php echo $prev->url() ?>">&larr; previous project</a>
+    <?php endif ?>
+    <?php if($next = $page->nextVisible()): ?>
+    <a class="next small-6" href="<?php echo $next->url() ?>">next project &rarr;</a>
+    <?php endif ?>
+  </nav>
+</div>
 
 <?php snippet('footer') ?>
