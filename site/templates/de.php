@@ -3,7 +3,7 @@
   <main class="main" role="main">
 
     <div class="text">
-    	<h1>Eintshuldigung</h1>
+    	<h1>Eintshouldigung</h1>
 	
 		<h2>blablalbalba</h2>
 

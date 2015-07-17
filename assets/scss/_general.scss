@@ -203,12 +203,9 @@ p {
 
 #main.contact {
 	min-height: 60%;
-	ul {
-		list-style-type: none;
-		li {
-			font-size: 1.7rem;
-			line-height: 2.8rem;
-		}
+	a {
+		font-size: 1.7rem;
+		line-height: 2.8rem;
 	}
 }
 @media #{$large-only} { 
@@ -252,6 +249,37 @@ p {
 	}
 }
 
+// ===== / Press  =====
+
+#main.press {
+	section {
+		display:inline-block;
+		box-sizing:border-box;
+		&:first-child {
+			padding-right: 5rem;
+		}
+		article {
+			margin-bottom: 2.5rem;
+			h2, h3 {margin: 0;}
+			h3 {
+				font-size: 1.7rem;
+				
+			}
+			h2 {
+				font-size: 2.1rem;
+
+			}
+			p {
+				a {
+					font-size: 1.53rem;
+					i {font-size:1rem;}
+				}
+			}
+		}
+	}
+}
+
+// ===== / Press / Article =====
 
 #main.article {
 	h1 {
