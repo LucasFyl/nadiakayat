@@ -9,7 +9,7 @@
 		  	<article>
 		  		<h3><a href="<?php  echo $article->url(); ?>"><?php  echo $article->media()->html(); ?>:</a></h3>
 				<h2><a href="<?php  echo $article->url(); ?>"><?php  echo $article->title()->html(); ?></a></h2>
-				<p><a href="<?php  echo $article->link()->html(); ?>" target="_blank"><?php  echo $article->link()->html(); ?> &nbsp; <i class="fa fa-external-link"></i></a></p>
+				<p><a href="<?php  echo $article->link()->html(); ?>" target="_blank"><?php  echo $article->link()->html(); ?>&nbsp;<i class="fa fa-external-link"></i></a></p>
 		  	</article>
 		  	<?php endforeach ?>
 	  	</section>
@@ -18,7 +18,7 @@
 	  		<article>
 				<h3><a href="<?php  echo $article->url(); ?>"><?php  echo $article->media()->html(); ?>:</a></h3>
 				<h2><a href="<?php  echo $article->url(); ?>"><?php  echo $article->title()->html(); ?></a></h2>
-				<p><a href="<?php  echo $article->link()->html(); ?>" target="_blank"><?php  echo $article->link()->html(); ?> &nbsp; <i class="fa fa-external-link"></i></a></p>
+				<p><a href="<?php  echo $article->link()->html(); ?>" target="_blank"><?php  echo $article->link()->html(); ?>&nbsp;<i class="fa fa-external-link"></i></a></p>
 		  	</article>
 		  	<?php endforeach ?>
 	  	</section>
