@@ -6,8 +6,21 @@
 <div id="main" class="project">
 
   <section class="row">
+    
+
+    <div class="medium-12 large-9 gallery">
+      <!-- Gallery -->
+      <div id="gallery">
+        <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+        <div>
+          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+        </div>
+        <?php endforeach ?>
+      </div>
+    </div>
+    
     <!-- Project Infos -->
-    <div class="small-12 medium-3 pull-left">
+    <div class="medium-12 large-3 pull-left infos">
       <div>
         <?php echo $page->title()->kirbytext(); ?>
         <p><span class="bld">Location:</span> <?php echo $page->location()->html(); ?></p>
@@ -22,17 +35,9 @@
       </div>
     </div>
 
-    <div class="small-12 medium-9">
-      <!-- Gallery -->
-      <div id="gallery">
-        <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-        <div>
-          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-        </div>
-        <?php endforeach ?>
-      </div>
-    </div>
   </section>
+
+
 
   <nav class="nextprev small-12" role="navigation">
     <?php if($prev = $page->prevVisible()): ?>

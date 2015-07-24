@@ -3,7 +3,9 @@
 html {
   -webkit-font-smoothing: antialiased;
   font-size: 62.50%;
-  // font-size: 50%;
+	@media #{$large-only} { 
+		font-size: 50%;
+	}
 }
 
 body {
@@ -129,7 +131,7 @@ p {
 
 	.scroll-wrap {
 		height: 100%;
-		@media #{$medium-up} {
+		@media #{$large-only} {
 			height: 25.5rem;
 		}
 		overflow: hidden;
@@ -137,7 +139,7 @@ p {
 		> div {
 			padding: 0 3rem;
 
-			@media #{$medium-up} {
+			@media #{$large-only} {
 				position: absolute;
 				overflow-y: auto;
 				top: 0;
@@ -164,6 +166,7 @@ p {
 				}
 			}
 			> div:nth-child(3) {
+				margin-bottom: 5rem;
 				h2 {
 					font-size: 1.7rem;
 					margin-bottom: 1.5rem;
@@ -179,27 +182,29 @@ p {
 			 
 	}
 	.scrollTrigger {
-		font-size: 1.6rem;
-		line-height: 6.5rem;
-		text-align: center;
-		color: $greyish;
-			
-		width: 100%;
-		display: block;
-		overflow: hidden;
-		cursor: pointer;
-		&.up {
-			position: absolute;
-			width: 40px;
-			top: 0;
-			left: 50%;
-			margin-left: -20px;	
-		}
-		&:hover {
-			color: $baseColor;
-		}
-		@media #{$small-only} {
-			display: none;	
+		
+		display: none;	
+
+		@media #{$large-only} {
+			font-size: 1.6rem;
+			line-height: 6.5rem;
+			text-align: center;
+			color: $greyish;
+				
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			cursor: pointer;
+			&.up {
+				position: absolute;
+				width: 40px;
+				top: 0;
+				left: 50%;
+				margin-left: -20px;	
+			}
+			&:hover {
+				color: $baseColor;
+			}
 		}		
 	}
 	figure {
@@ -236,7 +241,9 @@ p {
 // ===== / Office =====
 
 #main.office {
+	padding-top: 10%;
 	> div {
+
 		> div:first-child {
 			ul {
 				margin: 0;
@@ -251,11 +258,18 @@ p {
 						color: $baseColor;
 					  	transition: 0.3s ease-in-out;
 					}
+					@media #{$large-only} { 
+						font-size: 205%;
+						margin-bottom: 2.73rem;
+					}
 				}
 			}
 		}
 		> div:last-child {
 			p {
+				@media #{$large-only} { 
+					font-size: 195%;
+				}
 				font-size: 1.53rem;
 				margin-bottom: 2.5rem;
 			}
@@ -348,7 +362,7 @@ p {
 			// 	height: 40rem;
 			// 	overflow:hidden;
 			// }
-			&:first-child {
+			&.infos {
 
 				p {
 					font-size: 1.7rem;
@@ -367,21 +381,35 @@ p {
 					}
 				}
 			}
-			&:nth-child(2) {
+			&.gallery {
+				padding-right: 5rem;
 				padding-left: 5rem;
+				margin-bottom: 5rem;
+
+				@media #{$large-only} { 
+					padding-left: 10rem;
+					margin-bottom: 0;	
+				}
+
 				div {
 					margin: 0; 
 					// height: 40rem; 
 					// overflow:hidden;
 				}
 				.gallerynav {
-					color: rgba(0,0,0,0.8);
+					color: $greyish;
 					position: absolute;
 					width: 5rem; height: 5rem;
 					text-align: center; line-height: 5rem;
 					z-index: 9; top: 50%; margin-top: -2.5rem;
 					&.nextArrow {
-						right: 0;
+						right: -5rem;
+					}
+					&.prevArrow {
+						left: -5rem;
+					}
+					&:hover {
+						color: $baseColor;
 					}
 				}
 				ul.slick-dots {
@@ -416,8 +444,8 @@ p {
 							outline: none;
 							background: transparent;
 							&:before {
-								font: normal normal normal 11px/1 FontAwesome;
-								font-size: 1.1rem;
+								font: normal normal normal 8px/1 FontAwesome;
+								// font-size: 1rem;
 								position: absolute;
 								top: 0;
 								left: 0;
