@@ -22,8 +22,6 @@ body {
 @mixin stickyFooter {
 	position: absolute; bottom: 0;
 	width: 100%; margin: 0;
-	padding-left: $sideMargin;
-	padding-right: $sideMargin;
 }
 
 a {
@@ -81,7 +79,7 @@ p {
 	}
 }
 @media #{$large-up} { 
-	#main + footer {
+	#main:not(.article) + footer {
 		@include stickyFooter;
 	}
 }
@@ -367,6 +365,7 @@ p {
 	> a {
 		display: block; width: 100%;
 		text-align: center;
+		font-size: 1.5rem;
 	}
 	
 }

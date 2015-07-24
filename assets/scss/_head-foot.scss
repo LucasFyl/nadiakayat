@@ -71,6 +71,9 @@ header {
 // ===== Footer =====
 
 footer {
+	padding-left: $sideMargin;
+	padding-right: $sideMargin;
+	
 	@media #{$small-only} {
 		display: none;
 	}
