@@ -8,7 +8,7 @@
   <section class="row">
     
 
-    <div class="medium-12 large-9 gallery">
+    <div class="small-hidden medium-12 large-9 gallery">
       <!-- Gallery -->
       <div id="gallery">
         <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>

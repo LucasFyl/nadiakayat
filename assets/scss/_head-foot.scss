@@ -60,6 +60,9 @@ header {
 				@media #{$medium-only} { 
 					top: 5rem;
 				}
+				@media #{$small-only} {
+					top: 14rem;
+				}
 			}
 		}
 	}
@@ -68,10 +71,12 @@ header {
 // ===== Footer =====
 
 footer {
+	@media #{$small-only} {
+		display: none;
+	}
+
 	display:block;
 	width: auto;
-	margin-left: $sideMargin;
-	margin-right: $sideMargin;
 	text-align: center;
 	
 	.copyright p {

@@ -61,6 +61,12 @@ p {
 		margin-left: 10rem;
 		margin-right: 10rem;
 	}
+	@media #{$small-only} { 
+		margin: 0;
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
 	nav {
 		margin-top: 4rem;
 		a {
@@ -95,6 +101,9 @@ p {
 			img {
 				display: block;
 				margin: 0 auto 7.5rem;
+				@media #{$small-only} {
+					margin: 0 auto 2.5rem;
+				}
 			}
 			> div {
 				text-align: center;
@@ -122,6 +131,9 @@ p {
 				@media #{$large-up} {
 					font-size: 1.8rem;
 				}
+				@media #{$small-only} {
+					line-height: 3rem;					
+				}
 			}
 		}
 	}
@@ -139,7 +151,9 @@ p {
 		overflow: hidden;
 		
 		> div {
-			padding: 0 3rem;
+			@media #{$medium-up} {
+				padding: 0 3rem;
+			}
 
 			@media #{$large-up} {
 				position: absolute;
@@ -156,14 +170,19 @@ p {
 					max-height: 14rem;
 					padding-top: 0.5rem;
 					padding-left: 0;
-					
+					@media #{$small-only} {
+						margin: 0 auto;
+						display: block;
+						float: none;
+					}
 				}
 				p {
 					// color: $greyish;
 					font-size: 1.7rem;
 					padding-left: 0;
 					@media #{$small-only} {
-						width: 60%;
+						width: 100%;
+						padding-top: 5rem;
 					}
 				}
 			}
@@ -240,11 +259,15 @@ p {
 
 #main.office {
 	padding-top: 10%;
+	@media #{$small-only} {
+		padding-top: 20%;
+	}
 	> div {
 
 		> div:first-child {
 			ul {
 				margin: 0;
+				list-style: none;
 				li {
 					color: $greyish;
 					font-size: 1.7rem;
@@ -259,6 +282,9 @@ p {
 					@media #{$large-up} { 
 						font-size: 2.33rem;
   						margin-bottom: 2.7rem;
+					}
+					@media #{$small-only} { 
+						text-align: center;
 					}
 				}
 			}
@@ -396,6 +422,9 @@ p {
 
 				@media #{$large-up} { 
 					padding-left: 10rem;
+				}
+				@media #{$small-only} { 
+					display: none;
 				}
 
 				div {
