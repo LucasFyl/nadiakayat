@@ -1,0 +1,118 @@
+// ===== Header =====
+header {
+	display:block;
+	width: auto;
+	height: 17.5rem;
+	padding-top: 3rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	@media #{$large-up} { 
+		height: 15rem;
+		padding-top: 7rem;
+		margin-left: $sideMargin;
+		margin-right: $sideMargin;
+	}
+	@media #{$medium-only} { 
+		padding-top: 5rem;
+		margin-left: 10rem;
+		margin-right: 10rem;
+	}	
+
+	a.logo {
+		display: inline-block;
+		float: left;
+		height: 8rem;
+		img {
+			height: 100%;
+		}
+	}
+	ul {
+		margin: 0 -10rem 0 13rem;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 1.9rem;
+			letter-spacing: .05rem;
+			line-height: 1.9rem;
+			text-align: left;
+			margin-bottom: 1.7rem;
+			@media #{$medium-up} {
+				text-align: center;
+			}
+			a {
+				color: $greyish;
+
+				&.active {
+					color: $baseColor;
+				}
+			}
+					
+			
+			&:last-child {
+				position: absolute;
+				display: inline-block;
+				width: auto;
+				right: 20rem;
+				top: 3rem;
+				@media #{$large-up} { 
+					top: 7rem;
+				}
+				@media #{$medium-only} { 
+					top: 5rem;
+				}
+				@media #{$small-only} {
+					top: 14rem;
+				}
+			}
+		}
+	}
+}
+
+// ===== Footer =====
+
+footer {
+	padding-left: $sideMargin;
+	padding-right: $sideMargin;
+	
+	@media #{$small-only} {
+		display: none;
+	}
+
+	display:block;
+	width: auto;
+	text-align: center;
+	
+	.copyright p {
+		font-size: 1.3rem;
+	}
+	
+	ul {
+		list-style-type: none;
+		line-height: 1.3rem;
+		font-size: 1.4rem;
+		margin: 0;
+		margin-bottom: 2rem;
+		height: 1.3rem;
+
+		li {
+			display: inline-block;
+			float: left;
+			width: calc(100% / 2);
+			text-align: center;
+			margin-bottom: 1.5rem;
+			&:last-child {
+				width: 100%;
+			}
+				
+			@media #{$large-up} { 
+				width: calc(100% / 5) !important;
+				&:first-child {
+					text-align: left;
+				}
+				&:last-child {
+					text-align: right;
+				}
+			}
+		}
+	}
+}

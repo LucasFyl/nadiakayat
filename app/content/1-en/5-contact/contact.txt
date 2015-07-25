@@ -1,0 +1,10 @@
+Title: Contact
+
+----
+
+Text: 
+
+(email: info@nadiakayatarchitects.com text: info@nadiakayatarchitects.com)
+(email: client@nadiakayatarchitects.com text: client@nadiakayatarchitects.com)
+(email: job@nadiakayatarchitects.com text: job@nadiakayatarchitects.com)
+(email: press@nadiakayatarchitects.com text: press@nadiakayatarchitects.com)

@@ -1,0 +1,535 @@
+	// ===== APPLICATION STYLES =====
+
+html {
+  -webkit-font-smoothing: antialiased;
+  font-size: 62.50%;
+	@media #{$large-up} { 
+		font-size: 50%;
+	}
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	font-family: $mainFont;
+	color: $baseColor;
+}
+.row {
+	max-width: none !important;
+}
+.mb0 {margin-bottom: 0 !important;}
+@mixin stickyFooter {
+	position: absolute; bottom: 0;
+	width: 100%; margin: 0;
+}
+
+a {
+  transition: .1s ease-in-out;
+  color: $linkColor;
+  &:hover {
+  	text-decoration: underline;
+  	color: $linkColor;
+  	cursor: pointer;
+  }
+  &:active, &:focus {
+  	color: $linkColor;
+  }
+}
+p {
+	color: $baseColor;
+}
+
+.vertical-center {
+	display: inline-block;
+	position: relative;
+	top: 50%; 
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+#main:not(.home) {
+	position: relative;
+	height: auto;
+	overflow: auto;
+	padding-top: 7rem;
+	padding-bottom: 10rem;
+	@media #{$large-up} { 
+		margin-left: $sideMargin;
+		margin-right: $sideMargin;
+	}
+	@media #{$medium-only} { 
+		margin-left: 10rem;
+		margin-right: 10rem;
+	}
+	@media #{$small-only} { 
+		margin: 0;
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	nav {
+		margin-top: 4rem;
+		a {
+			font-size: 1.8rem;
+			line-height: 2;
+			&.next {
+				text-align: right;
+				float: right;
+			}
+		}
+			
+	}
+}
+@media #{$large-up} { 
+	#main:not(.article) + footer {
+		@include stickyFooter;
+	}
+}
+
+// ===== Homepage =====
+
+#main.home {
+	width: 100%;
+	height: 90%;
+
+	.vertical-center {
+		width: 100%;
+		height: auto;
+		> div {
+			width: 22rem;
+			margin: 0 auto;
+			img {
+				display: block;
+				margin: 0 auto 7.5rem;
+				@media #{$small-only} {
+					margin: 0 auto 2.5rem;
+				}
+			}
+			> div {
+				text-align: center;
+				a {
+					font-size: 1.9rem;
+				}
+			}
+		}
+			
+	}
+	.info-links {
+		position: absolute;
+		bottom: 12%;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		ul {
+			display: inline-block;
+			margin: 0; padding: 0;
+			li {
+				display: block;
+				text-align: center;
+				font-size: 1.4rem;
+				line-height: 3.8rem;
+
+				@media #{$large-up} {
+					font-size: 1.8rem;
+				}
+				@media #{$small-only} {
+					line-height: 3rem;					
+				}
+			}
+		}
+	}
+}
+
+// ===== / Nadia - Kayat =====
+
+#main.bio {
+
+	.scroll-wrap {
+		height: 100%;
+		@media #{$large-up} {
+			height: 25.5rem;
+		}
+		overflow: hidden;
+		
+		> div {
+		    width: 100%;
+		    height: auto;
+
+			@media #{$medium-up} {
+				padding: 0 3rem;
+			}
+
+			@media #{$large-up} {
+				position: absolute;
+				overflow-y: auto;
+				top: 0;
+				padding: 0;
+			}
+				
+
+			> div:first-child {
+				margin-bottom: 4rem;
+				img {
+					width: auto;
+					max-height: 14rem;
+					padding-top: 0.5rem;
+					padding-left: 0;
+					@media #{$small-only} {
+						margin: 0 auto;
+						display: block;
+						float: none;
+					}
+				}
+				p {
+					// color: $greyish;
+					font-size: 1.7rem;
+					padding-left: 0;
+					@media #{$small-only} {
+						width: 100%;
+						padding-top: 5rem;
+					}
+				}
+			}
+			> div:nth-child(3) {
+				margin-bottom: 5rem;
+				h2 {
+					font-size: 1.7rem;
+					margin-bottom: 1.5rem;
+					// color: $greyish;
+					font-weight: bold;
+				} 
+				p {
+					font-size: 1.5rem;
+					// color: $greyish;
+				}
+			}
+		}
+			 
+	}
+	.scrollTrigger {
+		
+		display: none;	
+
+		@media #{$large-up} {
+			font-size: 1.6rem;
+			line-height: 6.5rem;
+			text-align: center;
+			color: $greyish;
+				
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			cursor: pointer;
+			&.up {
+				position: absolute;
+				width: 40px;
+				top: 0;
+				left: 50%;
+				margin-left: -20px;	
+			}
+			&:hover {
+				color: $baseColor;
+			}
+		}		
+	}
+	figure {
+		margin: 0;
+		figcaption {
+			font-size: 1.3rem;
+			padding-top: 1.5rem;
+			a {
+				text-decoration: underline !important;
+				i {
+					padding-left: .5rem;
+					vertical-align: middle;	
+				}
+			}
+		}
+	}
+}
+
+// ===== / Contact =====
+
+#main.contact {
+	min-height: 60%;
+	a {
+		font-size: 1.7rem;
+		line-height: 2.8rem;
+	}
+}
+
+
+// ===== / Office =====
+
+#main.office {
+	padding-top: 10%;
+	@media #{$small-only} {
+		padding-top: 20%;
+	}
+	> div {
+
+		> div:first-child {
+			ul {
+				margin: 0;
+				list-style: none;
+				li {
+					color: $greyish;
+					font-size: 1.7rem;
+					text-transform: uppercase;
+					margin-bottom: 2.63rem;
+					cursor: default;
+				  	transition: 0.3s ease-in-out;
+					&:hover {
+						color: $baseColor;
+					  	transition: 0.3s ease-in-out;
+					}
+					@media #{$large-up} { 
+						font-size: 2.33rem;
+  						margin-bottom: 2.7rem;
+					}
+					@media #{$small-only} { 
+						text-align: center;
+					}
+				}
+			}
+		}
+		> div:last-child {
+			p {
+				@media #{$large-up} { 
+					font-size: 1.95rem;
+				}
+				font-size: 1.53rem;
+				margin-bottom: 2.5rem;
+			}
+		}
+	}
+}
+
+
+// ===== / Press  =====
+
+#main.press {
+	section {
+		display:inline-block;
+		box-sizing:border-box;
+		&:first-child {
+			padding-right: 5rem;
+		}
+		article {
+			margin-bottom: 2.5rem;
+			h2, h3 {margin: 0; a:hover {text-decoration:none;}}
+			h3 {
+				font-size: 1.7rem;
+				font-weight: 200;
+				letter-spacing: .15rem;
+				@media #{$large-up} { 
+					font-size: 1.9rem;
+				}
+				
+			}
+			h2 {
+				font-size: 2.1rem;
+				letter-spacing: .15rem;
+				@media #{$large-up} { 
+					font-size: 2.4rem;
+				}
+			}
+			p {
+				a {
+					font-size: 1.53rem;
+					font-weight: 200;
+					@media #{$large-up} { 
+						font-size: 1.8rem;
+					}
+					i {
+						font-size:1rem;
+						@media #{$large-up} { 
+							font-size: 1.3rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// ===== / Press / Article =====
+
+#main.article {
+	h1 {
+		font-size: 2.4rem;
+		text-align: center;
+	}
+	h2 {
+		font-size: 1.8rem;
+		text-align: center;
+	}
+	p {
+		font-size: 1.3rem;
+		text-align: center;
+	}
+	> a {
+		display: block; width: 100%;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	
+}
+
+// ===== / Projects =====
+
+#main.projects {
+	h2 {
+		font-size: 1.7rem;
+	}
+}
+
+
+// ===== / Projects / Project =====
+
+#main.project {
+	padding-bottom: 2rem;
+
+	section {
+		// @media #{$large-up} { 
+		// 	display: table;
+		// }
+		> div {
+			display: inline-block;
+			// @media #{$large-up} { 
+			// 	display: table-row;
+			// 	> div {
+			// 		display: table-cell;
+			// 	}
+			// }
+			&.scrollControl {
+				div {
+					margin-top: 2.5rem;
+					a.up {
+						text-align: right;
+					}
+				}
+			}
+			&.infos {
+				@media #{$large-up} { 
+					overflow: hidden;
+					padding-right: 2rem;
+					position: relative;
+					min-height: 400px;
+					// height: 364px;
+					> div {
+						position: absolute;
+						top: 0;
+						height: auto;
+						// max-height: 364px;
+					}
+				}
+
+				p {
+					font-size: 1.7rem;
+					font-weight: 200;
+					margin-bottom: 1rem;
+					span.bld {
+						font-weight: 400;
+					}
+					&:first-child {
+						font-size: 2.1rem;
+						font-weight: 200;
+						margin-bottom: 0;
+					}
+					&:nth-child(2) {
+						margin-bottom: 3rem;
+					}
+				}
+			}
+			&.gallery {
+				padding-right: 5rem;
+				padding-left: 5rem;
+				margin-bottom: 5rem;
+
+				@media #{$large-up} { 
+					padding-left: 10rem;
+					float: right;
+				}
+				@media #{$small-only} { 
+					display: none;
+				}
+
+				div {
+					margin: 0; 
+				}
+				.gallerynav {
+					color: $greyish;
+					position: absolute;
+					width: 5rem; height: 5rem;
+					text-align: center; line-height: 5rem;
+					z-index: 9; top: 50%; margin-top: -2.5rem;
+					&.nextArrow {
+						right: -5rem;
+					}
+					&.prevArrow {
+						left: -5rem;
+					}
+					&:hover {
+						color: $baseColor;
+					}
+				}
+				ul.slick-dots {
+					position: absolute;
+					bottom: -8rem;
+					display: inline-block;
+					width: auto;
+					margin-left: 0;
+					right: 0;
+					height: 3.2rem;
+					padding: 0;
+					list-style: none;
+					text-align: center;
+					li {
+						position: relative;
+						display: inline-block;
+						width: 2rem;
+						height: 2rem;
+						margin: 0 0.5rem;
+						padding: 0;
+						cursor: pointer;
+						button {
+							font-size: 0;
+							line-height: 0;
+							display: block;
+							width: 2rem;
+							height: 2rem;
+							padding: 0.5rem;
+							cursor: pointer;
+							color: transparent;
+							border: 0;
+							outline: none;
+							background: transparent;
+							&:before {
+								font: normal normal normal 8px/1 FontAwesome;
+								// font-size: 1rem;
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 2rem;
+								height: 2rem;
+								content: '\f111';
+								text-align: center;
+								opacity: .25;
+								color: black;
+								-webkit-font-smoothing: antialiased;
+							}
+						}
+						&.slick-active {
+							button {
+								&:before {
+									opacity: 1;
+									color: black;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
