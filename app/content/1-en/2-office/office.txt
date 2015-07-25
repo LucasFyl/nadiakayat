@@ -2,18 +2,12 @@ Title: Office
 
 ----
 
-Text:
+Text: 
 
-## Get in touch
+For our  clients we take  responsibility  as  architects for a project  as a  whole, from architecture  to  interior  design.
 
-- (link: http://getkirby.com/support text: Kirby's support page)
-- (link: http://forum.getkirby.com text: Kirby's forum)
-- (link: http://github.com/getkirby text: Kirby on Github)
-- <support@getkirby.com>
+In  cooperation  with  our  extern  partners,  renowned  experts  in  their subject, we have acquired  high  experience in the  planning  and  execution  of  outstanding   pojects of  international  level, such  as  the  Yoo Penthouse,  the  hotel  Amano Grand Central and further major luxury living projects in Berlin and Switzerland.
 
-## Follow us on Twitter
+Based  on this  background  we  guarantee   high  quality  standards in  architecture as  well as in cost  controlling and time management. But  first  of all and maybe even more important, we are striving to meet  the visions and  the  needs and wants of our clients.
 
-- Follow Kirby on Twitter (twitter: @getkirby)
-- Follow Bastian on Twitter (twitter: @bastianallgeier)
-- Follow Nico on Twitter (twitter: @distantnative)
-- Follow Sascha on Twitter (twitter: @sashtown)
+Excellent  architecture and design as we see it is  not an end  in itself but  should first serve to  enhance  the quality of life for the people who live in the building and add value to the urban surroundings.

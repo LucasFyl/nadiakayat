@@ -2,4 +2,4 @@ Title: English
 
 ----
 
-Text: Insérer ici une redirection vers /nadia-kayat
+Text: Cette page n'est pas visible et redirige vers /nadia-kayat

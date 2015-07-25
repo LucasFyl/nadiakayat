@@ -6,10 +6,10 @@ password: >
   $2a$10$nhm.wRmNN3LR.NRmWOG50uBhQKhQ1Lk6hRJqD.YJm6fO4eSJDK8Ei
 language: en
 role: admin
-token: 1ec500402ed4510b3f0fbc2386e36971421deaee
+token: 004ee8228a6ea94cef3dc2067a0ade7faaa98b59
 history:
   - en/projects/amano
+  - en/office
+  - en
   - en/press/amano-grand-central
   - en/contact
-  - en/press
-  - en/press/berliner-morgenpost
