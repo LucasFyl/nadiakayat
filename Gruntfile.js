@@ -7,13 +7,13 @@ module.exports = function(grunt) {
     //=== include all bowerlibs
     bower_concat: {
       js: {
-        dest: 'assets/js/vendors.js',
+        dest: 'app/assets/js/vendors.js',
         mainFiles: {
           'retinajs': 'retina.js',
         },
       },
       css: {
-        cssDest: 'assets/css/vendors.css',
+        cssDest: 'app/assets/css/vendors.css',
         mainFiles: {
           'highlightjs': 'styles/github.css',
         },
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
           mangle: true,
         },
         files: {
-          'assets/js/vendors.min.js': 'assets/js/vendors.js'
+          'app/assets/js/vendors.min.js': 'app/assets/js/vendors.js'
         }
       },
       app: {
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
           mangle: true,
         },
         files: {
-          'assets/js/app.min.js': 'assets/js/app.js'
+          'app/assets/js/app.min.js': 'app/assets/js/app.js'
         }
       }
     },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         },
       app: {
         files: {
-          'assets/css/app.css' : 'assets/scss/app.scss'
+          'app/assets/css/app.css' : 'app/assets/scss/app.scss'
         }
       }
     },
@@ -67,14 +67,14 @@ module.exports = function(grunt) {
       bower: {
         expand: true,
         cwd: 'build',
-        src: 'assets/css/vendors.css',
-        dest: 'assets/css'
+        src: 'app/assets/css/vendors.css',
+        dest: 'dist/assets/css'
       },
       app: {
         expand: true,
         cwd: 'build',
-        src: 'assets/css/app.css',
-        dest: 'assets/css'
+        src: 'app/assets/css/app.css',
+        dest: 'dist/assets/css'
       }
 
     },
@@ -83,12 +83,12 @@ module.exports = function(grunt) {
     cssmin: {
       bower: {
         files: {
-          'assets/css/vendors.min.css': 'assets/css/vendors.css'
+          'app/assets/css/vendors.min.css': 'app/assets/css/vendors.css'
         }
       },
       app: {
         files: {
-          'assets/css/app.min.css': 'assets/css/app.css'
+          'app/assets/css/app.min.css': 'app/assets/css/app.css'
         }
       }
     },
@@ -96,17 +96,17 @@ module.exports = function(grunt) {
     // grunt-watch will monitor the projects files
     watch: {
       scss: {
-        files: 'assets/scss/*.scss',
+        files: 'app/assets/scss/*.scss',
         tasks: 'build-sass',
       },
       js: {
-        files: 'assets/js/app.js',
+        files: 'app/assets/js/app.js',
         tasks: 'uglify:app',
       },
       livereload: {
-        files: ['assets/js/*.js',
-                'assets/css/*.css',
-                'site/**/*.php'],
+        files: ['app/assets/js/*.js',
+                'app/assets/css/*.css',
+                'app/site/**/*.php'],
         options: { livereload: true }
       }
     },
@@ -122,20 +122,20 @@ module.exports = function(grunt) {
         files: [
           // includes files within path
           {expand: true,
-           src: ['assets/**/*',
-                 'kirby/**/*',
-                 'panel/**/*',
-                 'site/**/*',
-                 'content/site.txt',
-                 'content/error/**/*',
-                 'content/search/**/*',
-                 'content/impressum/**/*',
+           src: ['app/assets/**/*',
+                 'app/kirby/**/*',
+                 'app/panel/**/*',
+                 'app/site/**/*',
+                 'app/content/site.txt',
+                 'app/content/error/**/*',
+                 'app/content/search/**/*',
+                 'app/content/impressum/**/*',
                  '!**/accounts/**',
                  '!**/avatars/**',
                  '!**/scss/**',
                  '!**/.git/**',
-                 '.htaccess',
-                 'index.php',
+                 'app/.htaccess',
+                 'app/index.php',
                  ],
            dest: 'dist/'},
           {expand: true,
@@ -153,7 +153,7 @@ module.exports = function(grunt) {
           expand: true,
           flatten: true,
           src: ['bower_components/fontawesome/fonts/**/*'],
-          dest: 'assets/fonts/'
+          dest: 'app/assets/fonts/'
           },
         ],
       },

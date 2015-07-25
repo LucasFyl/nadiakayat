@@ -1,9 +1,0 @@
-Title: Error - Not Found
-
-----
-
-Text: 
-
-Sorry, this page has not been found.
-
-(link: http://nadiakayatarchitects.com text: Back home.)
