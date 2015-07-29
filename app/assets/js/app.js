@@ -6,6 +6,8 @@
 
 var $customScroll = $("#customScroll");
 var $gallery = $("#gallery");
+
+
 function initCustomScroll() {
 	var content = $('#customScroll > div'),
 		triggerDown = $('.scrollControl .down'),
@@ -55,6 +57,30 @@ function initGallerySlider() {
 function initProjectpage() {
 	var sHeight = $('#gallery').height();
 	TweenMax.set('#customScroll', {height:sHeight});
+
+	// $('.slick-slide').magnificPopup({
+	//   // delegate: 'img', // child items selector, by clicking on it popup will open
+	//   type: 'image'
+	//   // ,
+	//   // gallery: {enabled:true}
+	// });
+	$('body').on('click', '.slick-slide', function(e) {
+		e.preventDefault();
+		var _image = $(this).find('img'),
+			source = _image.attr('src');
+		console.log(_image, source);
+		$.magnificPopup.open({
+			preloader: false,
+			items: {
+				src: source
+			},
+			type: 'image'
+
+			// You may add options here, they're exactly the same as for $.fn.magnificPopup call
+			// Note that some settings that rely on click event (like disableOn or midClick) will not work here
+		}, 0);
+	});
+
 }
 function resize() {
 	console.log('page has been resized');

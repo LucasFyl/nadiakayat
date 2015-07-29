@@ -18,6 +18,7 @@
 <?= js('assets/js/vendors.min.js') ?>
 <?= js('assets/js/TweenMax.min.js') ?>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script>
+<?= js('assets/js/jquery.popup.js') ?>
 <?= js('assets/js/jquery.hoverIntent.min.js') ?>
 <?= js('assets/js/app.min.js') ?>
 
