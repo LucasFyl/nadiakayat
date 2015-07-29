@@ -9,6 +9,7 @@
 
   <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
     <figure>
+     <!-- class="popupimg" -->
       <a href="<?php echo $image->url() ?>" target="_blank">
         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
       </a>

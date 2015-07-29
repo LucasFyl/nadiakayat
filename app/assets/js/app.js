@@ -1,4 +1,3 @@
-// $(initPage);
  $(document).ready(function(){
  	initPage();
  	window.onresize = resize;
@@ -7,7 +6,7 @@
 var $customScroll = $("#customScroll");
 var $gallery = $("#gallery");
 
-
+// Custom scroll function core
 function initCustomScroll() {
 	var content = $('#customScroll > div'),
 		triggerDown = $('.scrollControl .down'),
@@ -19,7 +18,7 @@ function initCustomScroll() {
 	if ( content.height() > $('#customScroll').height() ) {
 		TweenMax.set(triggerUp, {opacity:0});
 		function scrollDown() {
-			scrollTween = TweenMax.to(content, 2.5, {top:'-100%',ease:Linear.easeNone});
+			scrollTween = TweenMax.to(content, 2.5, {top:'-110%',ease:Linear.easeNone});
 			TweenMax.to(triggerUp, 0.8, {opacity:1,ease:Power3.easeIn,delay:0.5})
 		}
 		function scrollUp() {
@@ -40,6 +39,8 @@ function initCustomScroll() {
 		
 }
 
+// init gallery slider 
+// docs: http://kenwheeler.github.io/slick/
 function initGallerySlider() {
 	$gallery.slick({
 	    fade: true,
@@ -55,42 +56,53 @@ function initGallerySlider() {
 }
 
 function initProjectpage() {
+	// Initiate gallery slider height
 	var sHeight = $('#gallery').height();
 	TweenMax.set('#customScroll', {height:sHeight});
 
-	// $('.slick-slide').magnificPopup({
-	//   // delegate: 'img', // child items selector, by clicking on it popup will open
-	//   type: 'image'
-	//   // ,
-	//   // gallery: {enabled:true}
-	// });
+	// Initiate magnifying popup and bind click event
 	$('body').on('click', '.slick-slide', function(e) {
 		e.preventDefault();
 		var _image = $(this).find('img'),
 			source = _image.attr('src');
-		console.log(_image, source);
+
 		$.magnificPopup.open({
 			preloader: false,
 			items: {
 				src: source
 			},
 			type: 'image'
-
-			// You may add options here, they're exactly the same as for $.fn.magnificPopup call
-			// Note that some settings that rely on click event (like disableOn or midClick) will not work here
 		}, 0);
 	});
 
 }
+function initPopup() {
+	$('body').on('click', '.popupimg', function(e) {
+		e.preventDefault();
+		var _image = $(this).find('img'),
+			source = _image.attr('src');
+
+		$.magnificPopup.open({
+			preloader: false,
+			items: {
+				src: source
+			},
+			type: 'image'
+		}, 0);
+	});
+}
 function resize() {
 	console.log('page has been resized');
+	// restart project gallery init on resize
 	if ( $('#main.project').length ) { initProjectpage(); }
 }
 function initPage(){
 	// Page load event 
 	$(document).foundation();    
 
+	// Page specific load events
 	if ( $customScroll.length ) { initCustomScroll(); }
 	if ( $('#main.project').length ) { initProjectpage(); }
 	if ( $gallery.length ) { initGallerySlider(); }
+	if ( $('.popupimg').length ) { initPopup() }
 }
