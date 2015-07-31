@@ -91,6 +91,12 @@ function initPopup() {
 		}, 0);
 	});
 }
+function hideLoader() {
+	setTimeout(function(){
+		TweenMax.to('#loader .center', 0.5, {opacity:0, display:'none', ease:Expo.easeOut});
+		TweenMax.to('#loader', 1.5, {opacity:0, display:'none', ease:Power1.easeOut, delay:0.5});
+	}, 1000)
+}
 function resize() {
 	console.log('page has been resized');
 	// restart project gallery init on resize
@@ -105,4 +111,6 @@ function initPage(){
 	if ( $('#main.project').length ) { initProjectpage(); }
 	if ( $gallery.length ) { initGallerySlider(); }
 	if ( $('.popupimg').length ) { initPopup() }
+	if ( $('#loader').length ) { hideLoader() }
+
 }

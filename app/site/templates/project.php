@@ -1,7 +1,6 @@
 <?php snippet('head') ?>
 <?php snippet('header') ?>
 
-  
 <!-- Main Content -->
 <div id="main" class="project">
 
