@@ -2,4 +2,7 @@ Title: Deutsch
 
 ----
 
-Text: Sorry …
+Text: 
+
+Tu peux modifier ce texte pour expliquer à quel point tu es désolé de ne pas encore avoir de version allemande.
+(link: /panel/#/pages/show/de/p:1 text: Clique ici pour le modifier)

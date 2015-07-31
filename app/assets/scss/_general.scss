@@ -1,5 +1,7 @@
 	// ===== APPLICATION STYLES =====
 
+$baseFont: 1.9rem;
+
 html {
   -webkit-font-smoothing: antialiased;
   font-size: 62.50%;
@@ -80,9 +82,17 @@ p {
 			
 	}
 }
-@media #{$large-up} { 
+@media #{$medium-up} { 
+
 	#main:not(.article) + footer {
 		@include stickyFooter;
+	}
+
+	// #main:not(.press) + footer {
+	// 	@include stickyFooter;
+	// }
+	#main.press + footer {
+		position: static !important;
 	}
 }
 
@@ -101,6 +111,8 @@ p {
 			img {
 				display: block;
 				margin: 0 auto 7.5rem;
+			    width: 80%;
+
 				@media #{$small-only} {
 					margin: 0 auto 2.5rem;
 				}
@@ -135,6 +147,26 @@ p {
 					line-height: 3rem;					
 				}
 			}
+		}
+	}
+}
+.home-footer {
+	
+	ul {
+		li {
+			text-align: center;
+			list-style: none;
+			a {
+				font-size: 1.8rem;
+			}
+		}
+	}
+	.copyright {
+		width: 100%;
+		text-align: center;	
+		p {
+			font-size: 1.5rem;
+			margin-top: 2rem;
 		}
 	}
 }
@@ -181,7 +213,8 @@ p {
 				}
 				p {
 					// color: $greyish;
-					font-size: 1.7rem;
+					// font-size: 1.7rem;
+					font-size: $baseFont;
 					padding-left: 0;
 					@media #{$small-only} {
 						width: 100%;
@@ -192,13 +225,15 @@ p {
 			> div:nth-child(3) {
 				padding-bottom: 15rem;
 				h2 {
-					font-size: 1.7rem;
+					font-size: $baseFont;
+					// font-size: 1.7rem;
 					margin-bottom: 1.5rem;
 					// color: $greyish;
 					font-weight: bold;
 				} 
 				p {
-					font-size: 1.5rem;
+					font-size: $baseFont;
+					// font-size: 1.5rem;
 					// color: $greyish;
 				}
 			}
@@ -278,15 +313,15 @@ p {
 	}
 	> div {
 
-		> div:first-child {
+		> div:last-child {
 			ul {
 				margin: 0;
 				list-style: none;
 				li {
 					color: $greyish;
-					font-size: 1.7rem;
+					font-size: $baseFont;
 					text-transform: uppercase;
-					margin-bottom: 2.63rem;
+					margin-bottom: 3.5rem;
 					cursor: default;
 				  	transition: 0.3s ease-in-out;
 					&:hover {
@@ -294,8 +329,7 @@ p {
 					  	transition: 0.3s ease-in-out;
 					}
 					@media #{$large-up} { 
-						font-size: 2.33rem;
-  						margin-bottom: 2.7rem;
+						margin-bottom: 4rem;
 					}
 					@media #{$small-only} { 
 						text-align: center;
@@ -303,12 +337,9 @@ p {
 				}
 			}
 		}
-		> div:last-child {
+		> div:first-child {
 			p {
-				@media #{$large-up} { 
-					font-size: 1.95rem;
-				}
-				font-size: 1.53rem;
+				font-size: $baseFont;
 				margin-bottom: 2.5rem;
 			}
 		}
@@ -319,6 +350,9 @@ p {
 // ===== / Press  =====
 
 #main.press {
+	> div:last-child() {
+		margin-bottom: 20rem !important;
+	}
 	section {
 		display:inline-block;
 		box-sizing:border-box;
@@ -329,25 +363,26 @@ p {
 			margin-bottom: 2.5rem;
 			h2, h3 {margin: 0; a:hover {text-decoration:none;}}
 			h3 {
-				font-size: 1.7rem;
-				font-weight: 200;
-				letter-spacing: .15rem;
-				@media #{$large-up} { 
-					font-size: 1.9rem;
-				}
+				font-size: $baseFont;
+				// font-weight: 200;
+				// letter-spacing: .15rem;
+				// @media #{$large-up} { 
+				// 	font-size: 1.9rem;
+				// }
 				
 			}
 			h2 {
-				font-size: 2.1rem;
-				letter-spacing: .15rem;
-				@media #{$large-up} { 
-					font-size: 2.4rem;
-				}
+				font-size: $baseFont;
+				font-weight: 800;
+				// letter-spacing: .15rem;
+				// @media #{$large-up} { 
+				// 	font-size: 2.4rem;
+				// }
 			}
 			p {
 				a {
 					font-size: 1.53rem;
-					font-weight: 200;
+					// font-weight: 200;
 					@media #{$large-up} { 
 						font-size: 1.8rem;
 					}
@@ -390,7 +425,7 @@ p {
 
 #main.projects {
 	h2 {
-		font-size: 1.7rem;
+		font-size: $baseFont;
 	}
 }
 
@@ -436,15 +471,15 @@ p {
 				}
 
 				p {
-					font-size: 1.7rem;
-					font-weight: 200;
-					margin-bottom: 1rem;
+					font-size: $baseFont;
+					// font-weight: 200;
+					margin-bottom: 0;
 					span.bld {
-						font-weight: 400;
+						font-weight: 600;
 					}
 					&:first-child {
 						font-size: 2.1rem;
-						font-weight: 200;
+						font-weight: 800;
 						margin-bottom: 0;
 					}
 					&:nth-child(2) {
@@ -467,6 +502,7 @@ p {
 
 				div {
 					margin: 0; 
+					cursor: pointer;
 				}
 				.gallerynav {
 					color: $greyish;
@@ -543,4 +579,14 @@ p {
 			}
 		}
 	}
+}
+
+
+// ===== / DE =====
+#main.de {
+
+	p {
+		font-size: $baseFont;
+	}
+
 }

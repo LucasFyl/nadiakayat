@@ -1,15 +1,13 @@
+<?php snippet('head') ?>
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
-
-    <div class="text">
-    	<h1>Eintshouldigung</h1>
+<!-- Main Content -->
+<div id="main" class="de row">
 	
-		<h2>blablalbalba</h2>
+	<div class="large-12">
+		<?php echo $page->text()->kirbytext(); ?>
+	</div>
 
-      	<?php echo $page->text()->kirbytext() ?>
-    </div>
-
-  </main>
+</div>
 
 <?php snippet('footer') ?>

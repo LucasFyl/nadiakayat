@@ -13,7 +13,7 @@ function initCustomScroll() {
 		triggerUp = $('.scrollControl .up'),
 		scrollTween;
 
-	console.log(content.height(), '????', $('#customScroll').height());
+	// console.log(content.height(), '????', $('#customScroll').height());
 
 	if ( content.height() > $('#customScroll').height() ) {
 		TweenMax.set(triggerUp, {opacity:0});
@@ -46,10 +46,10 @@ function initGallerySlider() {
 	    fade: true,
 	    dots: true,
 	    infinite: true,
-	    cssEase: "linear",
-	    speed: 500,
+	    cssEase: "ease-in",
+	    speed: 1600,
 	    autoplay: true,
-	    autoplaySpeed: 2000,
+	    autoplaySpeed: 1500,
 	    prevArrow: "<a href='#' class='gallerynav prevArrow'> <i class='fa fa-chevron-left'></i> </a>",
 	    nextArrow: "<a href='#' class='gallerynav nextArrow'> <i class='fa fa-chevron-right'></i> </a>",
 	});

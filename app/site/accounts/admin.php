@@ -8,8 +8,8 @@ language: en
 role: admin
 token: 004ee8228a6ea94cef3dc2067a0ade7faaa98b59
 history:
+  - de
   - en/projects/amano
   - en/office
   - en
   - en/press/amano-grand-central
-  - en/contact

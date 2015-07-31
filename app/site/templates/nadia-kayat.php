@@ -3,9 +3,6 @@
 
 <!-- Main Content -->
 <div id="main" class="bio">
-	<!-- <div class="scrollControl">
-		<a href="#" class="scrollTrigger up"><i class="fa fa-chevron-up"></i></a>
-	</div> -->
 	<div class="scroll-wrap small-12 column" id="customScroll">
 		<div>
 			<div class="row">
@@ -27,16 +24,13 @@
         <a href="#" class="scrollTrigger up large-6 column"><i class="fa fa-chevron-up"></i></a>
       </div>
     </div>
-	<!-- <div class="scrollControl">
-		<a href="#" class="scrollTrigger down columns"><i class="fa fa-chevron-down"></i></a>
-	</div> -->
 	<div class="img-wrap small-12 column">
 		<figure>
 			<div class="popupimg">
 				<img src="<?php echo url('assets/images/asset-bg-about.jpg'); ?>" alt="Geneva Switzerland - Train station" draggable="false" />
 			</div>
 			<figcaption>
-				<a href="http://www.jeannouvel.com/mobile/en/smartphone/#/mobile/en/smartphone/projet/geneva-switzerland-train-station1" target="blank">CEVA train station, Ateliers Jean Nouvel&nbsp;<i class="fa fa-external-link"></i></a>
+				<!-- <a href="http://www.jeannouvel.com/mobile/en/smartphone/#/mobile/en/smartphone/projet/geneva-switzerland-train-station1" target="blank">CEVA train station, Ateliers Jean Nouvel&nbsp;<i class="fa fa-external-link"></i></a> -->
 			</figcaption>
 		</figure>
 	</div>

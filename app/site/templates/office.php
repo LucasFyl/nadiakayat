@@ -4,7 +4,12 @@
 <!-- Main Content -->
 <div id="main" class="office">
 	<div class="row">
-		<div class="small-12 medium-3 large-2 pull-left">
+		
+		<div class="small-12 medium-6 large-9 pull-right">
+			<?php echo $page->text()->kirbytext(); ?>
+		</div>
+
+		<div class="small-12 medium-4 large-3 pull-left">
 			<ul>
 				<li>Architecture</li>
 				<li>Interior Design</li>
@@ -13,9 +18,6 @@
 				<li>Restoration</li>
 				<li>Urban Planning</li>
 			</ul>
-		</div>
-		<div class="small-12 medium-6 large-9 pull-right">
-			<?php echo $page->text()->kirbytext(); ?>
 		</div>
 	</div>
 </div>
