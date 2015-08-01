@@ -48,7 +48,6 @@ function initGallerySlider() {
 	    infinite: true,
 	    cssEase: "ease-in",
 	    speed: 1600,
-	    autoplay: true,
 	    autoplaySpeed: 1500,
 	    prevArrow: "<a href='#' class='gallerynav prevArrow'> <i class='fa fa-chevron-left'></i> </a>",
 	    nextArrow: "<a href='#' class='gallerynav nextArrow'> <i class='fa fa-chevron-right'></i> </a>",
@@ -94,7 +93,9 @@ function initPopup() {
 function hideLoader() {
 	setTimeout(function(){
 		TweenMax.to('#loader .center', 0.5, {opacity:0, display:'none', ease:Expo.easeOut});
-		TweenMax.to('#loader', 1.5, {opacity:0, display:'none', ease:Power1.easeOut, delay:0.5});
+		TweenMax.to('#loader', 1.5, {opacity:0, display:'none', ease:Power1.easeOut, delay:0.5, onComplete:function(){
+			$gallery.slick('slickPlay');
+		}});
 	}, 1000)
 }
 function resize() {
