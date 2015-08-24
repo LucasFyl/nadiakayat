@@ -1,13 +1,33 @@
-Title: Project B
+Title: Guardian, Luxury Penthouses
 
 ----
 
-Year: 2013
+Location: Berlin-Mitte, Germany
 
 ----
 
-Tags: city
+Period: 2014 / under construction
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+Area: 11.062 sqm
+
+----
+
+Client: Rockstone Schützen 46 GmbH & Co. KG
+
+----
+
+Typeof: Private
+
+----
+
+Program: 8 Penthouses – Living area, masterbedroom, bathroom en suite, guestroom, planted rooftop terrace or terrace
+
+----
+
+Task: Architecture, Interior Design, Design Ready
+
+----
+
+Concept: 

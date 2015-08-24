@@ -4,7 +4,19 @@ Title: Contact
 
 Text: 
 
-(email: info@nadiakayatarchitects.com text: info@nadiakayatarchitects.com)
-(email: client@nadiakayatarchitects.com text: client@nadiakayatarchitects.com)
+**Clients**
+If you are planning a project and you are interested in our office, please contact us at: (email: client@nadiakayatarchitects.com text: client@nadiakayatarchitects.com)
+**Employment**
+If you would like to work with us, please send us an e-mail and a document with the curriculum vitae and portfolio and the accredited architectural degree.
 (email: job@nadiakayatarchitects.com text: job@nadiakayatarchitects.com)
+**Press**
+If you require any information about Nadia Kayat Architects or our projects please contact us at:
 (email: press@nadiakayatarchitects.com text: press@nadiakayatarchitects.com)
+
+<br/> 
+
+**Nadia Kayat Architects**
+Rosenthaler Str. 68
+10119 Berlin - Mitte
+Tel: (+49) 30 364 14 168
+Email: (email: info@nadiakayatarchitects.com text: info@nadiakayatarchitects.com)

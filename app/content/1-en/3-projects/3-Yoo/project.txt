@@ -1,13 +1,33 @@
-Title: Project C
+Title: YOO Luxury Penthouse Berlin
 
 ----
 
-Year: 2012
+Location: Berlin-Mitte, Germany
 
 ----
 
-Tags: stuff
+Period: 2014 / under construction
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+Area: 255 sqm
+
+----
+
+Client: Peach Property Group AG
+
+----
+
+Typeof: Private
+
+----
+
+Program: Large living space, open kitchen, 2 masterbedrooms, 2 bathrooms en suite, planted terrace
+
+----
+
+Task: Architecture, Interior Design
+
+----
+
+Concept: 

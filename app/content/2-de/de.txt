@@ -4,5 +4,7 @@ Title: Deutsch
 
 Text: 
 
-Tu peux modifier ce texte pour expliquer à quel point tu es désolé de ne pas encore avoir de version allemande.
-(link: /panel/#/pages/show/de/p:1 text: Clique ici pour le modifier)
+**Die deutsche Fassung unserer Website befindet sich noch in Arbeit.**
+Bitte klicken Sie auf die Weiterleitung zur englischen Version.
+
+**(link: /en/nadia-kayat text: Englischen Version)**

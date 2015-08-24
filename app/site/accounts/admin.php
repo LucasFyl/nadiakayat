@@ -6,10 +6,10 @@ password: >
   $2a$10$nhm.wRmNN3LR.NRmWOG50uBhQKhQ1Lk6hRJqD.YJm6fO4eSJDK8Ei
 language: en
 role: admin
-token: 004ee8228a6ea94cef3dc2067a0ade7faaa98b59
+token: fad4c45f71b8df0137864e006931365f6134f628
 history:
   - de
+  - en/contact
   - en/projects/amano
-  - en/office
   - en
-  - en/press/amano-grand-central
+  - en/projects/lux

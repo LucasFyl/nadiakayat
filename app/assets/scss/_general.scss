@@ -84,13 +84,9 @@ p {
 }
 @media #{$medium-up} { 
 
-	#main:not(.article) + footer {
+	#main:not(.nosticky) + footer {
 		@include stickyFooter;
 	}
-
-	// #main:not(.press) + footer {
-	// 	@include stickyFooter;
-	// }
 	#main.press + footer {
 		position: static !important;
 	}
@@ -300,6 +296,17 @@ p {
 	a {
 		font-size: 1.7rem;
 		line-height: 2.8rem;
+		text-decoration: underline;
+	}
+	p:last-of-type {
+		display: inline-block;
+	}
+	a.map {
+	    height: auto;
+	    display: inline-block;
+	    float: right;
+	    width: 77%;
+	    overflow: auto;
 	}
 }
 
@@ -592,7 +599,10 @@ p {
 #main.de {
 
 	p {
-		font-size: $baseFont;
+		font-size: 2.4rem;
+	}
+	a {
+		text-decoration: underline;
 	}
 
 }

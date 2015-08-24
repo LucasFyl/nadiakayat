@@ -4,7 +4,7 @@
 <?php snippet('loader') ?>
 
 <!-- Main Content -->
-<div id="main" class="article">
+<div id="main" class="article nosticky">
   <h1>"<?php echo $page->title()->html() ?>"</h1>
   <h2><a href="<?php echo $page->link()->html() ?>" target="_blank"><?php echo $page->media()->html() ?></a></h2>
   <p>Click on the image to expand.</p>
