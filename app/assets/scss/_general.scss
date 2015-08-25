@@ -433,6 +433,10 @@ p {
 #main.projects {
 	h2 {
 		font-size: $baseFont;
+		&.disabled {
+			opacity: .5;
+			cursor: pointer;
+		}
 	}
 }
 
